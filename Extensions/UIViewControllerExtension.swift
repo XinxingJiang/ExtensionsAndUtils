@@ -27,6 +27,11 @@ extension UIViewController {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
+    // pop top view controller from the stack
+    func popViewController() {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     // set the text showing in back button on the navigation bar
     func setBackButtonTitle(title title: String) {
         self.hideNavigationBar = false // double check navigation bar is shown
